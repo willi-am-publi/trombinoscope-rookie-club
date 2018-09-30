@@ -1,0 +1,67 @@
+[
+  {
+    "lastname": "François",
+    "firstname": "Yannick",
+    "pseudo": "yaf",
+    "avatar": "https://rookieclub.org/user_avatar/rookieclub.org/yannick/120/3_1.png",
+    "rookieSince": "01/01/2016",
+    "github": "https://github.com/Rookie-Club",
+    "skills": [
+      "Vim",
+      "JavaScript",
+      "Ruby"
+    ]
+  },
+  {
+    "lastname": "Mercier",
+    "firstname": "Fabien",
+    "pseudo": "NerOcrO",
+    "avatar": "https://rookieclub.org/user_avatar/rookieclub.org/nerocro/120/34_1.png",
+    "rookieSince": "01/08/2018",
+    "github": "https://github.com/NerOcrO",
+    "skills": [
+      "JavaScript",
+      "PHP",
+      "Modélisation de base de données",
+      "HTML",
+      "CSS",
+      "Refactoring"
+    ]
+  },
+  {
+    "lastname": "",
+    "firstname": "William",
+    "pseudo": "will.i.am",
+    "avatar": "https://rookieclub.org/letter_avatar_proxy/v2/letter/w/8dc957/120.png",
+    "rookieSince": "01/01/2017",
+    "github": "https://github.com/Rookie-Club",
+    "skills": [
+      "Python",
+      "Machine learning"
+    ]
+  },
+  {
+    "lastname": "",
+    "firstname": "Sakada",
+    "pseudo": "PetitPandaRoux",
+    "avatar": "https://rookieclub.org/user_avatar/rookieclub.org/petitpandaroux/120/37_1.png",
+    "rookieSince": "01/01/2017",
+    "github": "https://github.com/Rookie-Club",
+    "skills": [
+      "JavaScript",
+      "Python"
+    ]
+  },
+  {
+    "lastname": "",
+    "firstname": "Camille",
+    "pseudo": "emillumine",
+    "avatar": "https://rookieclub.org/letter_avatar_proxy/v2/letter/c/22d042/120.png",
+    "rookieSince": "01/01/2017",
+    "github": "https://github.com/Rookie-Club",
+    "skills": [
+      "Python",
+      "Contribution au libre"
+    ]
+  }
+]

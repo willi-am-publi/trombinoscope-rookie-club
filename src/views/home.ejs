@@ -1,0 +1,10 @@
+<% for (let i = 0; i < locals.data.length; i++) { %>
+<a href="/member/<%= locals.data[i].pseudo %>" class="member">
+  <div class="avatar"><img src="<%= locals.data[i].avatar %>" alt=""></div>
+  <div class="name">
+    <div class="lastname"><%= locals.data[i].lastname %></div>
+    <div class="firstname"><%= locals.data[i].firstname %></div>
+  </div>
+  <div class="pseudo">(<%= locals.data[i].pseudo %>)</div>
+</a>
+<% } %>

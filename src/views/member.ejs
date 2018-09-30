@@ -1,0 +1,13 @@
+<div class="left">
+  <div class="avatar"><img src="<%= locals.member.avatar %>" alt=""></div>
+</div>
+<div class="right">
+  <div class="name">
+    <div class="lastname"><%= locals.member.lastname %></div>
+    <div class="firstname"><%= locals.member.firstname %></div>
+  </div>
+  <div class="pseudo"><span class="label">Pseudo :</span> <%= locals.member.pseudo %></div>
+  <div class="member-since"><span class="label">Rookie depuis :</span> <%= locals.member.rookieSince %></div>
+  <div class="github"><span class="label">GitHub :</span> <a href="<%= locals.member.github %>"><%= locals.member.github %></a></div>
+  <div class="skills"><span class="label">Aimerais t'aider sur :</span> <%= locals.member.skills.join(', ') %></div>
+</div>

@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #edf2ed;
+  font-size: 100%;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 1200px;
+}
+.member {
+  background: #fff;
+  border: 1px solid #e6e9eb;
+  color: #000;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  min-width: 250px;
+  opacity: 0.4;
+}
+.member:hover {
+  opacity: 1;
+}
+.member img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.name {
+  display: flex;
+  justify-content: center;
+}
+.name div {
+  font-size: 1.5rem;
+  padding: 2px;
+}
+.overlay {
+  background: rgba(1, 1, 1, .5);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+.modal {
+  background: #fff;
+  display: flex;
+  left: 40%;
+  min-height: 500px;
+  padding: 10px;
+  position: absolute;
+  top: 10%;
+  width: 500px;
+}
+.modal .left {
+  margin-right: 10px;
+}
+.modal .right {
+  border-left: 1px solid #e6e9eb;
+  padding-left: 10px;
+}
+.modal .right .label {
+  font-weight: 900;
+}
+.modal .right div {
+  margin: 10px 0;
+}
