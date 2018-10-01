@@ -33,7 +33,7 @@ const displayMember = async (event) => {
     }
   }
   catch (error) {
-    console.log(error)
+    console.error(error)
   }
 }
 

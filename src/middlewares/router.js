@@ -4,40 +4,46 @@ import fs from 'fs'
 const router = express.Router()
 
 const displayTrombinoscope = async (request, response) => {
-  await fs.promises.readFile('src/data/rookies.json', 'utf8')
-    .then(async (rawData) => {
-      const data = JSON.parse(rawData)
+  const rawData = await fs.promises.readFile('src/data/rookies.json', 'utf8')
 
-      response.render('layout', {
-        view: 'home',
-        title: 'Home',
-        data,
-      })
+  try {
+    const data = JSON.parse(rawData)
+
+    response.render('layout', {
+      view: 'home',
+      title: 'Home',
+      data,
     })
-    .catch(error => console.log(error))
+  }
+  catch (error) {
+    console.error(error)
+  }
 }
 
 const displayMember = async (request, response) => {
-  await fs.promises.readFile('src/data/rookies.json', 'utf8')
-    .then(async (rawData) => {
-      const data = JSON.parse(rawData)
+  const rawData = await fs.promises.readFile('src/data/rookies.json', 'utf8')
 
-      const [member] = data.filter(member => member.pseudo === request.params.pseudo)
+  try {
+    const data = JSON.parse(rawData)
 
-      if (request.query.raw) {
-        response.render('member', {
-          member,
-        })
-      }
-      else {
-        response.render('layout', {
-          view: 'member',
-          title: member.pseudo,
-          member,
-        })
-      }
-    })
-    .catch(error => console.log(error))
+    const [member] = data.filter(member => member.pseudo === request.params.pseudo)
+
+    if (request.query.raw) {
+      response.render('member', {
+        member,
+      })
+    }
+    else {
+      response.render('layout', {
+        view: 'member',
+        title: member.pseudo,
+        member,
+      })
+    }
+  }
+  catch (error) {
+    console.error(error)
+  }
 }
 
 router.get('/', (request, response) => {
