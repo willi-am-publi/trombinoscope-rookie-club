@@ -24,16 +24,17 @@ const displayMember = async (event) => {
 
   event.preventDefault()
 
-  await fetch(`${element.href}?raw=1`)
-    .then((response) => {
-      if (response.status === 200) {
-        return response.text()
-      }
-    })
-    .then((text) => {
+  try {
+    const response = await fetch(`${element.href}?raw=1`)
+
+    if (response.ok) {
+      const text = await response.text()
       createModal(text)
-    })
-    .catch(error => console.log(error))
+    }
+  }
+  catch (error) {
+    console.log(error)
+  }
 }
 
 $$('.member').forEach((a) => {
