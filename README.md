@@ -16,8 +16,3 @@ Présentation des rookies à travers ce trombinoscope.
 ## Utilisation
 
 `npm run dev` puis `http://localhost:8080/`
-
-## Contribuer
-
-Pour ajouter ou modifier un Rookie, il suffit d'éditer le fichier
-data/rookies.json.
