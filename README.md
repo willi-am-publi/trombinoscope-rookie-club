@@ -16,3 +16,7 @@ Présentation des rookies à travers ce trombinoscope.
 ## Utilisation
 
 `npm run dev` puis `http://localhost:8080/`
+
+## Limitation
+
+`npm run serve` above works with node v.8.x.x not yet with v.10.x.x
