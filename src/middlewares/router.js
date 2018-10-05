@@ -4,7 +4,7 @@ import fs from 'fs'
 const router = express.Router()
 
 const displayTrombinoscope = async (request, response) => {
-  const rawData = await fs.promises.readFile('src/data/rookies.json', 'utf8')
+  const rawData = await fs.readFileSync('src/data/rookies.json', 'utf8')
 
   try {
     const data = JSON.parse(rawData)
@@ -21,7 +21,7 @@ const displayTrombinoscope = async (request, response) => {
 }
 
 const displayMember = async (request, response) => {
-  const rawData = await fs.promises.readFile('src/data/rookies.json', 'utf8')
+  const rawData = await fs.readFileSync('src/data/rookies.json', 'utf8')
 
   try {
     const data = JSON.parse(rawData)

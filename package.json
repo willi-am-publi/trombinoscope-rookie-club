@@ -16,7 +16,7 @@
   "author": "NerOcrO",
   "license": "MIT",
   "engines": {
-    "node": ">=10.0.0",
+    "node": ">=8.0.0",
     "npm": ">=3.8.6"
   },
   "dependencies": {
